@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ops_front:
+    container_name: vision_web
+    # restart: always
+    build:  
+      context: .
+      dockerfile: Dockerfile-local
+    image: vision_web
+    ports:
+      - "81:80"
