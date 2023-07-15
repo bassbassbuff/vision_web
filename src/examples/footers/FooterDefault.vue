@@ -7,7 +7,7 @@ defineProps({
     logo: String,
     route: "",
     default: () => ({
-      name: "Material Kit 2",
+      name: "Vision Energy",
       logo: logoDark,
       route: "/"
     })
@@ -19,23 +19,23 @@ defineProps({
     default: () => [
       {
         icon: '<i class="fab fa-facebook text-lg opacity-8"></i>',
-        link: "https://www.facebook.com/CreativeTim/"
+        link: "https://www.facebook.com/"
       },
       {
         icon: '<i class="fab fa-twitter text-lg opacity-8"></i>',
-        link: "https://twitter.com/creativetim"
+        link: "https://twitter.com/"
       },
       {
         icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
-        link: "https://dribbble.com/creativetim"
+        link: "https://dribbble.com/"
       },
       {
         icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/creativetimofficial"
+        link: "https://github.com/"
       },
       {
         icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
-        link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
+        link: "https://www.youtube.com/"
       }
     ]
   },
@@ -53,17 +53,19 @@ defineProps({
         items: [
           {
             name: "about us",
-            href: "https://www.creative-tim.com/presentation"
+            href: "https://www.google.com/"
           },
           {
             name: "freebies",
-            href: "https://www.creative-tim.com/templates/free"
+            href: "https://www.google.com/"
           },
           {
             name: "premium tools",
-            href: "https://www.creative-tim.com/templates/premium"
+            href: "https://www.google.com/"
           },
-          { name: "blog", href: "https://www.creative-tim.com/blog" }
+          { name: "blog", 
+            href: "https://www.google.com/"
+        }
         ]
       },
       {

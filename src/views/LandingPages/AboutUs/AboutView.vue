@@ -45,8 +45,8 @@ onUnmounted(() => {
   <DefaultNavbar
     :action="{
       route: 'javascript:;',
-      label: 'Buy Now',
-      color: 'btn-white',
+      // label: 'Buy Now',
+      // color: 'btn-white',
     }"
     transparent
   />
@@ -64,16 +64,17 @@ onUnmounted(() => {
             </h1>
             <div id="typed-strings">
               <h1>team</h1>
-              <h1>design</h1>
-              <h1>tool</h1>
+              <h1>array of products</h1>
+              <!-- <h1>tool</h1> -->
             </div>
             <p class="lead mb-4 text-white opacity-8">
-              We’re constantly trying to express ourselves and actualize our
-              dreams. If you have the opportunity to play this game
+              Vision Energy Kenya Ltd is one of the leading oil marketing
+              companies in Kenya involved in import, marketing and 
+              distribution of high quality petroleum products.
             </p>
-            <button type="submit" class="btn bg-white text-dark">
+            <!-- <button type="submit" class="btn bg-white text-dark">
               Create Account
-            </button>
+            </button> -->
             <h6 class="text-white mb-2 mt-5">Find us on</h6>
             <div class="d-flex justify-content-center">
               <a href="javascript:;"

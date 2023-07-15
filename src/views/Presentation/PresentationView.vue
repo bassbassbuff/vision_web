@@ -9,13 +9,17 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
 //Vue Material Kit 2 components
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
+import MaterialBadge from "@/components/MaterialBadge.vue";
+
 
 // sections
 import PresentationCounter from "./Sections/PresentationCounter.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
-import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
+import BulkLpg from "./Components/BulkLpg.vue";
+import RetailLpg from "./Components/RetailLpg.vue";
+import InstallationsForLpg from "./Components/InstallationsForLpg.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
@@ -59,14 +63,13 @@ onUnmounted(() => {
         <div class="row">
           <div class="col-lg-7 text-center mx-auto position-relative">
             <h1
-              class="text-white pt-3 mt-n5 me-2"
+              class="text-success pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ' }"
             >
-              Material Kit 2
+              Vision Energy
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Start the Development With Bootstrap 5 Design System inspired by
-              Material Design.
+              Expert LPG Solutions.
             </p>
           </div>
         </div>
@@ -77,9 +80,28 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <PresentationCounter />
     <PresentationInformation />
-    <PresentationExample :data="data" />
-    <PresentationPages />
-    <BuiltByDevelopers />
+
+    <div class="container">
+      <div class="row">
+        <div class="row justify-content-center text-center my-sm-5">
+          <div class="col-lg-6">
+            <MaterialBadge color="success" class="mb-3"
+              ><h2 class="text-white mb-0">SERVICES</h2></MaterialBadge
+            >            
+            <p class="lead">
+              We offer a wide range of products and services to both retail and consumer customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <BulkLpg />
+    <RetailLpg />
+    <InstallationsForLpg/>
+    <!-- <PresentationExample :data="data" /> -->
+    <!-- <PresentationPages /> -->
+    
 
     <div class="container">
       <div class="row">
@@ -170,7 +192,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="d-flex flex-column w-100 text-center p-5 mb-8">
           <h3>Available on these technologies</h3>
@@ -261,7 +283,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="py-5">
       <div class="container">
         <div class="row">

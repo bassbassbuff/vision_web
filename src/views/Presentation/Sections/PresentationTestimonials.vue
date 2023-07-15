@@ -1,5 +1,6 @@
 <script setup>
 import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vue";
+import PresentationContact from "./PresentationContact.vue";
 </script>
 <template>
   <section class="py-7">
@@ -8,11 +9,11 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
         <div class="col-lg-6 mx-auto text-center">
           <h2 class="mb-0">Trusted by over</h2>
           <h2 class="text-gradient text-success mb-3">
-            1,679,477+ web developers
+            1,000+ dealers
           </h2>
           <p class="lead">
-            Many Fortune 500 companies, startups, universities and governmental
-            institutions love Creative Tim's products.
+            Many Fortune companies, startups, universities and governmental
+            institutions love Vision Energy products.
           </p>
         </div>
       </div>
@@ -20,8 +21,11 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
         <DefaultReviewCard
           name="Nick Willever"
           date="1 day ago"
-          review='"This is an excellent product, the documentation is excellent and
-          helped me get things done more efficiently."'
+          review='"Vision Energy has helped us record tremendous growth 
+          through the supply of high quality petroleum products at cost 
+          effective rates. Their efficient delivery of product and quick 
+          response to delays has ensured that we are operational round 
+          the clock."'
           :rating="5.0"
         />
         <DefaultReviewCard
@@ -29,21 +33,27 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
           color="bg-gradient-success"
           name="Shailesh Kushwaha"
           date="1 week ago"
-          review='"I found solution to all my design needs from Creative Tim. I
-                  use them as a freelancer in my hobby projects for fun! And its
-                  really affordable, very humble guys !!!"'
+          review='"As a result of Galana Oil efficiency,
+           we have recorded a remarkable drop in our 
+           operating expenses and this has led us to 
+           invest additional capital into growing our 
+           business. We therefore commend Vision Energy 
+           for the excellent job they are doing and recommend 
+           them to others looking for a petrol station 
+           dealership partner."'
           :rating="5.0"
         />
-
-        <DefaultReviewCard
+        <PresentationContact/>
+        <!-- <DefaultReviewCard
           name="Samuel Kamuli"
           date="3 weeks ago"
-          review='"Great product. Helped me cut the time to set up a site. I
-                  used the components within instead of starting from scratch. I
-                  highly recommend for developers who want to spend more time on
-                  the backend!."'
+          review='"Vision Energy has helped us record tremendous growth 
+          through the supply of high quality petroleum products at cost 
+          effective rates. Their efficient delivery of product and quick 
+          response to delays has ensured that we are operational round 
+          the clock."'
           :rating="5.0"
-        />
+        /> -->
       </div>
       <hr class="horizontal dark my-5" />
       <div class="row">

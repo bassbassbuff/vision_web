@@ -32,7 +32,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
             />
           </RotatingCard>
         </div>
-        <div class="col-lg-6 ms-auto">
+        <!-- <div class="col-lg-6 ms-auto">
           <div class="row justify-content-start">
             <DefaultInfoCard
               icon="content_copy"
@@ -63,7 +63,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
                   naturally fit the given resolution."
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
