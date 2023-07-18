@@ -71,14 +71,14 @@ defineProps({
       {
         name: "resources",
         items: [
-          { name: "illustrations", href: "https://iradesign.io/" },
+          { name: "illustrations", href: "" },
           {
             name: "bits & snippets",
-            href: "https://www.creative-tim.com/bits"
+            href: ""
           },
           {
             name: "affiliate program",
-            href: "https://www.creative-tim.com/affiliates/new"
+            href: ""
           }
         ]
       },
@@ -87,19 +87,19 @@ defineProps({
         items: [
           {
             name: "contact us",
-            href: "https://www.creative-tim.com/contact-us"
+            href: ""
           },
           {
             name: "knowledge center",
-            href: "https://www.creative-tim.com/knowledge-center"
+            href: ""
           },
           {
             name: "custom development",
-            href: "https://services.creative-tim.com/"
+            href: ""
           },
           {
             name: "sponsorships",
-            href: "https://www.creative-tim.com/sponsorships"
+            href: ""
           }
         ]
       },
@@ -108,15 +108,15 @@ defineProps({
         items: [
           {
             name: "terms & conditions",
-            href: "https://www.creative-tim.com/terms"
+            href: ""
           },
           {
             name: "privacy policy",
-            href: "https://www.creative-tim.com/privacy"
+            href: "y"
           },
           {
             name: "licenses (EULA)",
-            href: "https://www.creative-tim.com/license"
+            href: ""
           }
         ]
       }
@@ -173,9 +173,9 @@ defineProps({
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright ©
               {{ new Date().getFullYear() }}
-              Material Kit by
-              <a href="https://www.creative-tim.com" target="_blank"
-                >Creative Tim</a
+              Vision Energy by
+              <a href="" target="_blank"
+                >Vision Energy</a
               >.
             </p>
           </div>

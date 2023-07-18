@@ -110,11 +110,11 @@ onUnmounted(() => {
             class="p-4"
             :color="{ text: 'white', background: 'bg-gradient-success' }"
             :icon="{ component: 'flag', color: 'white' }"
-            title="Getting Started"
+            title="LPG Hospitality"
             description="Check the possible ways of working with our product and the necessary files for building your own project."
             :action="{
               route:
-                'https://www.creative-tim.com/learning-lab/vue/overview/material-kit/',
+                '',
               label: { text: 'Let\'s start', color: 'white' }
             }"
           />
@@ -124,27 +124,28 @@ onUnmounted(() => {
             class="px-lg-1 mt-lg-0 mt-4 p-4"
             height="h-100"
             :icon="{ component: 'precision_manufacturing', color: 'success' }"
-            title="Plugins"
-            description="Get inspiration and have an overview about the plugins that we
-                used to create the Material Kit."
+            title="LPG Products"
+            description="Check the possible ways of working with our product and the necessary 
+            files for building your own project."
             :action="{
               route:
-                'https://www.creative-tim.com/learning-lab/vue/input/material-kit/',
+                '',
               label: { text: 'Read more' }
             }"
           />
         </div>
         <div class="col-lg-4">
           <FilledInfoCard
-            class="px-lg-1 mt-lg-0 mt-4 p-4"
-            :icon="{ component: 'receipt_long', color: 'success' }"
-            title="Utility Classes"
-            description="Material Kit is giving you a lot of pre-made elements. For those
-                who want flexibility, we included many utility classes."
+            class="p-4"
+            :color="{ text: 'white', background: 'bg-gradient-success' }"
+            :icon="{ component: 'flag', color: 'white' }"
+            title="LPG Hospitality"
+            description="Check the possible ways of working with our product and the necessary 
+            files for building your own project."
             :action="{
               route:
-                'https://www.creative-tim.com/learning-lab/vue/utilities/material-kit/',
-              label: { text: 'Read more' }
+                '',
+              label: { text: 'Let\'s start', color: 'white' }
             }"
           />
         </div>
@@ -171,19 +172,19 @@ onUnmounted(() => {
             <div class="d-flex justify-content-center p-5">
               <div class="col-lg-8 ms-lg-5 text-center">
                 <h3 class="text-white">
-                  Do you love this awesome UI Kit from Vuejs & Bootstrap?
+                  We would love to hear from you
                 </h3>
-                <p class="text-white text-md">
+                <!-- <p class="text-white text-md">
                   Cause if you do, it can be yours for FREE. Hit the button
                   below to navigate to Creative Tim where you can <br />
                   find the Design System in HTML. Start a new project or give an
                   old Bootstrap project a new look!
-                </p>
+                </p> -->
 
                 <a
-                  href="https://www.creative-tim.com/product/vue-material-kit"
+                  
                   class="btn btn-sm mb-0 bg-gradient-success px-5 py-3 mt-4"
-                  >Download Now</a
+                  >Send Message</a
                 >
               </div>
             </div>
@@ -289,17 +290,17 @@ onUnmounted(() => {
         <div class="row">
           <div class="col-lg-5 ms-auto">
             <h4 class="mb-1">Thank you for your support!</h4>
-            <p class="lead mb-0">We deliver the best web products</p>
+            <p class="lead mb-0">We deliver the best LPG products</p>
           </div>
           <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
             <MaterialSocialButton
-              route="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-design-system-pro"
+              route="https://twitter.com/"
               component="twitter"
               color="twitter"
               label="Tweet"
             />
             <MaterialSocialButton
-              route="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-design-system-pro"
+              route="https://www.facebook.com/"
               component="facebook-square"
               color="facebook"
               label="Share"

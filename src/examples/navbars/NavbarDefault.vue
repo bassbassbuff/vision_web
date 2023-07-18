@@ -8,6 +8,13 @@ import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
+{/* <RouterLink
+                        :to="{ name: 'about' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>About Us</span>
+                      </RouterLink> */}
+
 const props = defineProps({
   action: {
     type: Object,
@@ -15,9 +22,9 @@ const props = defineProps({
     color: String,
     label: String,
     default: () => ({
-      route: "https://www.creative-tim.com/product/vue-material-kit",
+      route: "locations",
       color: "bg-gradient-success",
-      label: "Free Download"
+      label: "Locate Us"
     })
   },
   transparent: {
@@ -224,31 +231,31 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-headers' }"
+                        :to="{ name: '' }"
                       >
                         Company Overview
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-features' }"
+                        :to="{ name: '' }"
                       >
                         Mission & Vision
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-headers' }"
+                        :to="{ name: '' }"
                       >
                         CSR
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-features' }"
+                        :to="{ name: '' }"
                       >
                         Our Team
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-features' }"
+                        :to="{ name: '' }"
                       >
                         HSSEQ - Policy
                       </RouterLink>
@@ -256,232 +263,9 @@ watch(
                     </div>
                   </li>
 
-
-                  <!-- <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Navigation
-                            </h6>
-                            <span class="text-sm">See all navigations</span>
-                          </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navbars' }"
-                      >
-                        Navbars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navtabs' }"
-                      >
-                        Nav Tabs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-pagination' }"
-                      >
-                        Pagination
-                      </RouterLink>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Input Areas
-                            </h6>
-                            <span class="text-sm">See all input areas</span>
-                          </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-inputs' }"
-                      >
-                        Inputs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-forms' }"
-                      >
-                        Forms
-                      </RouterLink>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Attention Catchers
-                            </h6>
-                            <span class="text-sm">See all examples</span>
-                          </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-alerts' }"
-                      >
-                        Alerts
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-modals' }"
-                      >
-                        Modals
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-tooltips-popovers' }"
-                      >
-                        Tooltips & Popovers
-                      </RouterLink>
-                    </div>
-                  </li>
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Elements
-                            </h6>
-                            <span class="text-sm">See all elements</span>
-                          </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-avatars' }"
-                      >
-                        Avatars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
-                      >
-                        Badges
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-breadcrumbs' }"
-                      >
-                        Breadcrumbs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-buttons' }"
-                      >
-                        Buttons
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-button-groups' }"
-                      >
-                        Button Groups
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-dropdowns' }"
-                      >
-                        Dropdowns
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-progress-bars' }"
-                      >
-                        Progress Bars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-toggles' }"
-                      >
-                        Toggles
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-typography' }"
-                      >
-                        Typography
-                      </RouterLink>
-                    </div>
-                  </li> -->
-               
                 </ul>
               </div>
+              <!-- About Us Smaller Screens -->
               <div class="row d-lg-none">
                 <div class="col-md-12">
                   <div class="d-flex mb-2">
@@ -499,285 +283,41 @@ watch(
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'page-headers' }"
+                    :to="{ name: '' }"
                   >
-                    Page Headers
+                  Company Overview
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'page-features' }"
+                    :to="{ name: '' }"
                   >
-                    Features
-                  </RouterLink>
-                  <!-- <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Navigation
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-navbars' }"
-                  >
-                    Navbars
+                  CSR
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-navtabs' }"
+                    :to="{ name: '' }"
                   >
-                    Nav Tabs
+                  Mission & Vision
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-pagination' }"
+                    :to="{ name: '' }"
                   >
-                    Pagination
-                  </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Input Areas
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-inputs' }"
-                  >
-                    Inputs
+                  Our Team
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-forms' }"
+                    :to="{ name: '' }"
                   >
-                    Forms
+                  HSSEQ - Policy
                   </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Attention Catchers
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-alerts' }"
-                  >
-                    Alerts
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-modals' }"
-                  >
-                    Modals
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-tooltips-popovers' }"
-                  >
-                    Tooltips & Popovers
-                  </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Elements
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-avatars' }"
-                  >
-                    Avatars
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-badges' }"
-                  >
-                    Badges
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-breadcrumbs' }"
-                  >
-                    Breadcrumbs
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-buttons' }"
-                  >
-                    Buttons
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-button-groups' }"
-                  >
-                    Button Groups
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-dropdowns' }"
-                  >
-                    Dropdowns
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-progress-bars' }"
-                  >
-                    Progress Bars
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-toggles' }"
-                  >
-                    Toggles
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-typography' }"
-                  >
-                    Typography
-                  </RouterLink> -->
+                 
                 </div>
               </div>
             </div>
           </li>
           <!-- Pages -->
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              :class="getTextColor()"
-              id="dropdownMenuPages"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >dashboard</i
-              >
-              Pages
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-1 d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
-            >
-              <div class="row d-none d-lg-block">
-                <div class="col-12 px-4 py-2">
-                  <div class="row">
-                    <div class="position-relative">
-                      <!-- <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
-                      >
-                        Landing Pages
-                      </div> -->
-                      <RouterLink
-                        :to="{ name: 'about' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>About Us</span>
-                      </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'contactus' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Contact Us</span>
-                      </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'author' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Author</span>
-                      </RouterLink>
-                      <!-- <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                      >
-                        Account
-                      </div>
-                      <RouterLink
-                        :to="{ name: 'signin-basic' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Sign In</span>
-                      </RouterLink> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-lg-none">
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
-                >
-                  Landing Pages
-                </div>
-                <RouterLink
-                  :to="{ name: 'about' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>About Us</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'contactus' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Contact Us</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'author' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Author</span>
-                </RouterLink>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                >
-                  Account
-                </div>
-                <RouterLink
-                  :to="{ name: 'signin-basic' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Sign In</span>
-                </RouterLink>
-              </div>
-            </div>
-          </li>
+          
 
           <!-- Sections -->
           <li class="nav-item dropdown dropdown-hover mx-2">
@@ -794,7 +334,7 @@ watch(
                 :class="getTextColor()"
                 >view_day</i
               >
-              Sections
+              Our Services
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -827,7 +367,7 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Page Sections
+                              Bulk LPG
                             </h6>
                             <span class="text-sm">See all sections</span>
                           </div>
@@ -842,13 +382,13 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-headers' }"
+                        :to="{ name: '' }"
                       >
-                        Page Headers
+                        Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-features' }"
+                        :to="{ name: '' }"
                       >
                         Features
                       </RouterLink>
@@ -869,9 +409,9 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Navigation
+                              Bulk LPG
                             </h6>
-                            <span class="text-sm">See all navigations</span>
+                            <span class="text-sm">See details</span>
                           </div>
                           <img
                             :src="downArrow"
@@ -884,21 +424,21 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navbars' }"
+                        :to="{ name: '' }"
                       >
-                        Navbars
+                        Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navtabs' }"
+                        :to="{ name: '' }"
                       >
-                        Nav Tabs
+                        Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-pagination' }"
+                        :to="{ name: '' }"
                       >
-                        Pagination
+                        Features
                       </RouterLink>
                     </div>
                   </li>
@@ -917,9 +457,9 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Input Areas
+                              Installations
                             </h6>
-                            <span class="text-sm">See all input areas</span>
+                            <span class="text-sm">See all</span>
                           </div>
                           <img
                             :src="downArrow"
@@ -932,15 +472,15 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-inputs' }"
+                        :to="{ name: '' }"
                       >
-                        Inputs
+                        Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-forms' }"
+                        :to="{ name: '' }"
                       >
-                        Forms
+                      Features
                       </RouterLink>
                     </div>
                   </li>
@@ -959,9 +499,9 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Attention Catchers
+                              Hospitality
                             </h6>
-                            <span class="text-sm">See all examples</span>
+                            <span class="text-sm">See all...</span>
                           </div>
                           <img
                             :src="downArrow"
@@ -974,21 +514,21 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-alerts' }"
+                        :to="{ name: '' }"
                       >
-                        Alerts
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-modals' }"
+                        :to="{ name: '' }"
                       >
-                        Modals
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-tooltips-popovers' }"
+                        :to="{ name: '' }"
                       >
-                        Tooltips & Popovers
+                      Features
                       </RouterLink>
                     </div>
                   </li>
@@ -1007,9 +547,9 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Elements
+                              Other services
                             </h6>
-                            <span class="text-sm">See all elements</span>
+                            <span class="text-sm">See all...</span>
                           </div>
                           <img
                             :src="downArrow"
@@ -1022,57 +562,57 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-avatars' }"
+                        :to="{ name: '' }"
                       >
-                        Avatars
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
+                        :to="{ name: '' }"
                       >
-                        Badges
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-breadcrumbs' }"
+                        :to="{ name: '' }"
                       >
-                        Breadcrumbs
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-buttons' }"
+                        :to="{ name: '' }"
                       >
-                        Buttons
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-button-groups' }"
+                        :to="{ name: '' }"
                       >
-                        Button Groups
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-dropdowns' }"
+                        :to="{ name: '' }"
                       >
-                        Dropdowns
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-progress-bars' }"
+                        :to="{ name: '' }"
                       >
-                        Progress Bars
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-toggles' }"
+                        :to="{ name: '' }"
                       >
-                        Toggles
+                      Features
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-typography' }"
+                        :to="{ name: '' }"
                       >
-                        Typography
+                      Features
                       </RouterLink>
                     </div>
                   </li>
@@ -1088,20 +628,20 @@ watch(
                         <h6
                           class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                         >
-                          Page Sections
+                          Bulk LPG
                         </h6>
                       </div>
                     </div>
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'page-headers' }"
+                    :to="{ name: '' }"
                   >
-                    Page Headers
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'page-features' }"
+                    :to="{ name: '' }"
                   >
                     Features
                   </RouterLink>
@@ -1113,28 +653,28 @@ watch(
                         <h6
                           class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                         >
-                          Navigation
+                        Retail Services
                         </h6>
                       </div>
                     </div>
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-navbars' }"
+                    :to="{ name: '' }"
                   >
-                    Navbars
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-navtabs' }"
+                    :to="{ name: '' }"
                   >
-                    Nav Tabs
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-pagination' }"
+                    :to="{ name: '' }"
                   >
-                    Pagination
+                  Features
                   </RouterLink>
                   <div class="d-flex mb-2 mt-3">
                     <div
@@ -1144,22 +684,22 @@ watch(
                         <h6
                           class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                         >
-                          Input Areas
+                        LPG Installations
                         </h6>
                       </div>
                     </div>
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-inputs' }"
+                    :to="{ name: '' }"
                   >
-                    Inputs
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-forms' }"
+                    :to="{ name: '' }"
                   >
-                    Forms
+                  Features
                   </RouterLink>
                   <div class="d-flex mb-2 mt-3">
                     <div
@@ -1169,28 +709,28 @@ watch(
                         <h6
                           class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                         >
-                          Attention Catchers
+                        Hospitality 
                         </h6>
                       </div>
                     </div>
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-alerts' }"
+                    :to="{ name: '' }"
                   >
-                    Alerts
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-modals' }"
+                    :to="{ name: '' }"
                   >
-                    Modals
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-tooltips-popovers' }"
+                    :to="{ name: '' }"
                   >
-                    Tooltips & Popovers
+                  Features
                   </RouterLink>
                   <div class="d-flex mb-2 mt-3">
                     <div
@@ -1200,70 +740,70 @@ watch(
                         <h6
                           class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                         >
-                          Elements
+                        Other Services
                         </h6>
                       </div>
                     </div>
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-avatars' }"
+                    :to="{ name: '' }"
                   >
-                    Avatars
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-badges' }"
+                    :to="{ name: '' }"
                   >
-                    Badges
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-breadcrumbs' }"
+                    :to="{ name: '' }"
                   >
-                    Breadcrumbs
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-buttons' }"
+                    :to="{ name: '' }"
                   >
-                    Buttons
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-button-groups' }"
+                    :to="{ name: ''}"
                   >
-                    Button Groups
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-dropdowns' }"
+                    :to="{ name: '' }"
                   >
-                    Dropdowns
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-progress-bars' }"
+                    :to="{ name: '' }"
                   >
-                    Progress Bars
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-toggles' }"
+                    :to="{ name: '' }"
                   >
-                    Toggles
+                  Features
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-typography' }"
+                    :to="{ name: '' }"
                   >
-                    Typography
+                  Features
                   </RouterLink>
                 </div>
               </div>
             </div>
           </li>
-          <!-- Docs -->
+          <!-- Contact   -->
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
@@ -1278,170 +818,12 @@ watch(
                 :class="getTextColor()"
                 >article</i
               >
-              Docs
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-1 d-lg-none d-block ms-auto"
-              />
+              Contact              
             </a>
-            <div
-              class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-              aria-labelledby="dropdownMenuDocs"
-            >
-              <div class="d-none d-lg-block">
-                <ul class="list-group">
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/overview/material-kit/"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Getting Started
-                      </h6>
-                      <span class="text-sm"
-                        >All about overview, quick start, license and
-                        contents</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/colors/material-kit/"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Foundation
-                      </h6>
-                      <span class="text-sm"
-                        >See our colors, icons and typography</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/alerts/material-kit/"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Components
-                      </h6>
-                      <span class="text-sm"
-                        >Explore our collection of fully designed
-                        components</span
-                      >
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="row d-lg-none">
-                <div class="col-md-12 g-0">
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Getting Started
-                    </h6>
-                    <span class="text-sm"
-                      >All about overview, quick start, license and
-                      contents</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Foundation
-                    </h6>
-                    <span class="text-sm"
-                      >See our colors, icons and typography</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Components
-                    </h6>
-                    <span class="text-sm"
-                      >Explore our collection of fully designed components</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Plugins
-                    </h6>
-                    <span class="text-sm"
-                      >Check how you can integrate our plugins</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Utility Classes
-                    </h6>
-                    <span class="text-sm"
-                      >For those who want flexibility, use our utility
-                      classes</span
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
           </li>
-          <!-- <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              href="https://www.github.com/creativetimofficial/vue-material-kit"
-              class="nav-link d-flex cursor-pointer align-items-center"
-            >
-              <svg
-                width="20px"
-                height="20px"
-                class="material-icons me-2 opacity-6"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                data-testid="GitHubIcon"
-                :fill="props.transparent && '#fff'"
-              >
-                <path
-                  d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                ></path>
-              </svg>
-              Github
-            </a>
-          </li> -->
-
+          
           <!-- About Us  -->
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <!-- <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               href="https://www.github.com/creativetimofficial/vue-material-kit"
               class="nav-link d-flex cursor-pointer align-items-center"
@@ -1461,18 +843,17 @@ watch(
               </svg>
               About Us
             </a>
-          </li>
-
+          </li>          -->
         </ul>
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
-            <a
-              :href="action.route"
-              class="btn btn-sm mb-0"
-              :class="action.color"
-              onclick="smoothToPricing('pricing-soft-ui')"
-              >{{ action.label }}</a
+            <router-link
+            :to="{ name: action.route }"
+            class="btn btn-sm mb-0"
+            :class="action.color"            
             >
+            {{ action.label }}
+          </router-link>
           </li>
         </ul>
       </div>

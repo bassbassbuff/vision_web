@@ -22,7 +22,7 @@
                 just to name a few. We have the capacity to fulfil your LPG gas requirements.
             </p>
             <a
-              href="https://www.creative-tim.com/learning-lab/vue/overview/material-kit/"
+              href=""
               class="text-white icon-move-right"
             >
               Read more
