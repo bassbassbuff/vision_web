@@ -57,6 +57,7 @@ $primary: #e91e63 !default;
 $secondary: #7b809a !default;
 $info: #1a73e8 !default;
 $success: #4caf50 !default;
+$visiongreen: #34aa9c !default;
 $warning: #fb8c00 !default;
 $danger: #f44335 !default;
 $light: $gray-200 !default;
@@ -67,6 +68,7 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "success": $success,
+  "visiongreen": $visiongreen,
   "info": $info,
   "warning": $warning,
   "danger": $danger,

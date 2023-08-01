@@ -13,20 +13,23 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
             <RotatingCardFront
               image="https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
               icon="touch_app"
-              title="Feel the <br /> Material Kit"
-              description="All the Bootstrap components that you need in a development have been
-        re-design with the new look."
+              title="What we do"
+              description="We offer our clients in the energy and infrastructure sectors end-to-end
+              solutions through our full range of LPG and services that span the entire
+              project life journey."
             />
 
             <RotatingCardBack
               image="https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80"
-              title="Discover More"
-              description="You will save a lot of time going from prototyping to full-functional
-                code because all elements are implemented."
+              title="We Focus On"
+              description="1. LPG Trading <br />
+              2. LPG Wholesale and Retail Distribution
+              3. LPG Transporta�on
+              4. LPG Bulk"
               :action="[
                 {
                   route: './/sections/page-sections/hero-sections.html',
-                  label: 'Start with Headers',
+                  label: 'Discover More',
                 },
               ]"
             />

@@ -11,11 +11,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Bulk LPG"
-                description="High quality Bulk LPG gas ideal for industrial and commercial consumers 
-                spanning from plastic manufacturing, steel shaping, glass making, hospitals, 
-                hotels, aerosols manufacturing, 
-                just to name a few. We have the capacity to fulfil your LPG gas requirements."
+                title="Industry Sectors"
+                description="Under this segment, we supply LPG in industrial sectors such as Steel, 
+                Automotive, Ceramic, Glass, Pharmaceuticals, Aerosol, Paper and Textile."
                 :count="70"
                 suffix="+"
                 :duration="3000"
@@ -25,11 +23,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Retail"
-                description="High quality Bulk LPG gas ideal for industrial and commercial consumers 
-                spanning from plastic manufacturing, steel shaping, glass making, hospitals, 
-                hotels, aerosols manufacturing, 
-                just to name a few. We have the capacity to fulfil your LPG gas requirements."
+                title="Amaan Gas Retail Outlets"
+                description="We have a strong spread of Amaan Gas retail outlets along with a wide
+                network of distributors who sell our products to domestic and commercial customers."
                 :count="1500"
                 suffix="+"
                 :duration="3000"
@@ -40,11 +36,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="success"
                 title="LPG Installations"
-                description="High quality Bulk LPG gas ideal for industrial and commercial consumers 
-                spanning from plastic manufacturing, steel shaping, glass making, hospitals, 
-                hotels, aerosols manufacturing, 
-                just to name a few. We have the capacity to fulfil your LPG gas requirements."
-                :count="15"
+                description="Reticulation in Hotels, Apartments, Schools, Malls and Restaurants."
+                :count="150"
                 suffix="+"
                 :duration="3000"
               />

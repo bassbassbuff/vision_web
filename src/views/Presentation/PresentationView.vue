@@ -24,7 +24,7 @@ import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
-import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
+import vueMkHeader from "@/assets/img/vue-mk-header.png";
 import wavesWhite from "@/assets/img/waves-white.svg";
 import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
 import logoTailwind from "@/assets/img/logos/icon-tailwind.jpg";
@@ -85,8 +85,8 @@ onUnmounted(() => {
       <div class="row">
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
-            <MaterialBadge color="success" class="mb-3"
-              ><h2 class="text-white mb-0">SERVICES</h2></MaterialBadge
+            <MaterialBadge class="mb-3 bg-[#3ecabf]"
+              ><h2 class="text-[#3ecabf] mb-0">SERVICES</h2></MaterialBadge
             >            
             <p class="lead">
               We offer a wide range of products and services to both retail and consumer customers.
@@ -123,7 +123,7 @@ onUnmounted(() => {
           <FilledInfoCard
             class="px-lg-1 mt-lg-0 mt-4 p-4"
             height="h-100"
-            :icon="{ component: 'precision_manufacturing', color: 'success' }"
+            :icon="{ component: 'precision_manufacturing', color: 'visiongreen' }"
             title="LPG Products"
             description="Check the possible ways of working with our product and the necessary 
             files for building your own project."
