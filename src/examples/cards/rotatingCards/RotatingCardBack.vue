@@ -9,7 +9,7 @@ defineProps({
     required: true,
   },
   description: {
-    type: String,
+    type: Array,
     required: true,
   },
   action: {
@@ -29,11 +29,16 @@ defineProps({
       backgroundSize: 'cover',
     }"
   >
-    <div class="card-body pt-7 text-center">
-      <h3 class="text-white" v-html="title"></h3>
-      <p class="text-white opacity-8">
-        {{ description }}
-      </p>
+    <div class="card-body pt-2 text-center">
+      <h3 class="text-white" v-html="title"></h3>    
+
+      <ul class="flex-column ms-n3 nav">
+        <!-- Loop through the description array and render each item as a list item -->
+        <li v-for="(desc, index) of description" 
+        :key="index" class="my-1 pl-4 relative">
+    <span class="list-marker absolute left-0 top-1">&#8226;</span>
+    {{ desc }}</li>
+      </ul>
       <div class="buttons-group">
         <a
           v-for="({ route, color, label }, index) of action"

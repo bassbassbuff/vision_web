@@ -14,7 +14,8 @@
         <div class="row">
           <div class="col-lg-6 ms-lg-5">
             <h4 class="text-white">Vision Energy</h4>
-            <h1 class="text-white">LPG Installations</h1>
+            <h1 class="text-white">Bulk industrial supplies
+              & installations</h1>
             <p class="lead text-white opacity-8">
               High quality Bulk LPG gas ideal for industrial and commercial consumers 
                 spanning from plastic manufacturing, steel shaping, glass making, hospitals, 

@@ -204,31 +204,45 @@ watch(
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
                   >
-                    <a
+                    <!-- <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
                       href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
+                    > -->
+                      <!-- <div class="d-flex"> -->
+                        <!-- <div
                           class="w-100 d-flex align-items-center justify-content-between"
-                        >
+                        > -->
                           <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              The Company
-                            </h6>
+                            <RouterLink
+                            class="dropdown-item py-2 ps-3 border-radius-md"
+                            :to="{ name: 'presentation' }"
+                          >
+                              <div class="d-flex">
+                                <div
+                                  class="w-100 d-flex align-items-center justify-content-between"
+                                >
+                                  <h6
+                                    class=""
+                                  >
+                                    
+                                    The Company
+                              
+                                  
+                                  </h6>
+                                </div>
+                              </div>
+                            </RouterLink>
                             <!-- <span class="text-sm">See all sections</span> -->
                           </div>
-                          <img
+                          <!-- <img
                             :src="downArrow"
                             alt="down-arrow"
                             class="arrow"
-                          />
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
+                          /> -->
+                        <!-- </div> -->
+                      <!-- </div> -->
+                    <!-- </a> -->
+                    <!-- <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
                         :to="{ name: '' }"
@@ -260,7 +274,57 @@ watch(
                         HSSEQ - Policy
                       </RouterLink>
                       
-                    </div>
+                    </div> -->
+                  </li>
+
+                  <li
+                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
+                  >                    
+                    <div>
+                      <RouterLink
+                      class="dropdown-item py-2 ps-3 border-radius-md"
+                      :to="{ name: 'presentation' }"
+                    >
+                        <div class="d-flex">
+                          <div
+                            class="w-100 d-flex align-items-center justify-content-between"
+                          >
+                            <h6
+                              class=""
+                            >                              
+                            Our Mission                    
+                            
+                            </h6>
+                          </div>
+                        </div>
+                      </RouterLink>
+                      <!-- <span class="text-sm">See all sections</span> -->
+                    </div>                          
+                  </li>
+
+                  <li
+                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
+                  >                    
+                    <div>
+                      <RouterLink
+                      class="dropdown-item py-2 ps-3 border-radius-md"
+                      :to="{ name: 'presentation' }"
+                    >
+                        <div class="d-flex">
+                          <div
+                            class="w-100 d-flex align-items-center justify-content-between"
+                          >
+                            <h6
+                              class=""
+                            >                              
+                            Core Values                   
+                            
+                            </h6>
+                          </div>
+                        </div>
+                      </RouterLink>
+                      <!-- <span class="text-sm">See all sections</span> -->
+                    </div>                          
                   </li>
 
                 </ul>

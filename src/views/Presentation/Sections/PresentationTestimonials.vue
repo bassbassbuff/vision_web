@@ -33,7 +33,7 @@ import PresentationContact from "./PresentationContact.vue";
           color="bg-gradient-success"
           name="Shailesh Kushwaha"
           date="1 week ago"
-          review='"As a result of Galana Oil efficiency,
+          review='"As a result of Vision Energy efficiency,
            we have recorded a remarkable drop in our 
            operating expenses and this has led us to 
            invest additional capital into growing our 
@@ -57,38 +57,38 @@ import PresentationContact from "./PresentationContact.vue";
       </div>
       <hr class="horizontal dark my-5" />
       <div class="row">
-        <div class="col-lg-2 col-md-4 col-6 ms-auto">
+        <!-- <div class="col-lg-2 col-md-4 col-6 ms-auto">
           <img
             class="w-100 opacity-6"
             src="@/assets/img/logos/gray-logos/logo-apple.svg"
             alt="Logo"
           />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
+        </div> -->
+        <div class="col-lg-3 col-md-4 col-6">
           <img
             class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-facebook.svg"
+            src="@/assets/img/logos/gray-logos/logo-hunkar.svg"
             alt="Logo"
           />
         </div>
-        <div class="col-lg-2 col-md-4 col-6">
+        <div class="col-lg-3 col-md-4 col-6">
           <img
             class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-nasa.svg"
+            src="@/assets/img/logos/gray-logos/logo-hass.svg"
             alt="Logo"
           />
         </div>
-        <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
+        <div class="col-lg-3 col-md-4 col-6 ms-lg-0 ms-md-auto">
           <img
             class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-vodafone.svg"
+            src="@/assets/img/logos/gray-logos/logo-petrocity.svg"
             alt="Logo"
           />
         </div>
-        <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
+        <div class="col-lg-3 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
           <img
             class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-digitalocean.svg"
+            src="@/assets/img/logos/gray-logos/logo-lakegas.svg"
             alt="Logo"
           />
         </div>

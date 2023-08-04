@@ -13,13 +13,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 ms-lg-5">
-            <h4 class="text-white">Green Gas</h4>
-            <h1 class="text-white">Retail LPG Services</h1>
+            <h4 class="text-white">Amaan Gas</h4>
+            <h1 class="text-white">LPG Wholesale and Retail Distribution</h1>
             <p class="lead text-white opacity-8">
-              High quality Bulk LPG gas ideal for industrial and commercial consumers 
-                spanning from plastic manufacturing, steel shaping, glass making, hospitals, 
-                hotels, aerosols manufacturing, 
-                just to name a few. We have the capacity to fulfil your LPG gas requirements.
+              We have a strong spread of Amaan Gas retail outlets in Nairobi, Mombasa, Nakuru 
+              and other major cities and towns in Kenya along with a wide
+              network of distributors who sell our products to domestic and commercial customers.
+              Vision Energy Limited launched cylinders under the brand name of
+              Amaan Gas which come in packages of 6kgs, 13kgs and 50kgs
             </p>
             <a
               href=""

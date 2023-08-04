@@ -25,7 +25,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 color="success"
                 title="Amaan Gas Retail Outlets"
                 description="We have a strong spread of Amaan Gas retail outlets along with a wide
-                network of distributors who sell our products to domestic and commercial customers."
+                network of distributors who sell our LPG products to domestic and commercial customers 
+                in Nairobi, Mombasa and other major cities in Kenya."
                 :count="1500"
                 suffix="+"
                 :duration="3000"

@@ -19,6 +19,7 @@ import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
 import BulkLpg from "./Components/BulkLpg.vue";
 import RetailLpg from "./Components/RetailLpg.vue";
+import Hospitality from "./Components/Hospitality.vue";
 import InstallationsForLpg from "./Components/InstallationsForLpg.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
@@ -59,18 +60,38 @@ onUnmounted(() => {
       :style="`background-image: url(${vueMkHeader})`"
       loading="lazy"
     >
+    <!-- <div class="bg-gradient-success position-relative mx-n3 overflow-hidden">
+      <img
+        src="@/assets/img/shapes/pattern-lines.svg"
+        alt="pattern-lines"
+        class="position-absolute start-0 top-md-0 w-100 opacity-6"
+      />
+      <div
+        class="container pb-lg-8 pb-7 pt-5 postion-relative z-index-2 position-relative"
+      >
+        <div class="row">
+          <div class="col-md-7 mx-auto text-center">
+            <span class="badge bg-gradient-dark mb-2">Pricing</span>
+            <h3 class="text-white">Ready to get Material Kit?</h3>
+            <p class="text-white">
+              Based on the license you get, you will have direct access to our
+              team <br />
+              of developers who built the product.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 text-center mx-auto position-relative">
-            <h1
-              class="text-success pt-3 mt-n5 me-2"
-              :style="{ display: 'inline-block ' }"
-            >
-              Vision Energy
-            </h1>
-            <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Expert LPG Solutions.
-            </p>
+          <div class="col-lg-7 text-center mx-auto position-relative bg-gradient-faded-white border-radius-lg">
+            <img
+              src="@/assets/img/vision_logo-07.png"
+              alt="vission-logo"
+              class=""
+            />            
           </div>
         </div>
       </div>
@@ -86,10 +107,13 @@ onUnmounted(() => {
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
             <MaterialBadge class="mb-3 bg-[#3ecabf]"
-              ><h2 class="text-[#3ecabf] mb-0">SERVICES</h2></MaterialBadge
+              ><h2 class="text-white mb-0">Our Services</h2></MaterialBadge
             >            
             <p class="lead">
-              We offer a wide range of products and services to both retail and consumer customers.
+              Vision Energy Limited is currently continuing to invest in a number of
+              projects which are aimed at establishing a virtuous future through
+              improving eﬃciency, reducing distribution cost, ensuring availability
+              and reliability and widening product access.
             </p>
           </div>
         </div>
@@ -99,11 +123,12 @@ onUnmounted(() => {
     <BulkLpg />
     <RetailLpg />
     <InstallationsForLpg/>
+    <Hospitality />
     <!-- <PresentationExample :data="data" /> -->
     <!-- <PresentationPages /> -->
     
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <FilledInfoCard
@@ -150,7 +175,7 @@ onUnmounted(() => {
           />
         </div>
       </div>
-    </div>
+    </div> -->
     <PresentationTestimonials />
 
     <div

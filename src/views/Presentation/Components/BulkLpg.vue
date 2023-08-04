@@ -13,13 +13,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 ms-lg-5">
-            <h4 class="text-white">Bulk Lpg</h4>
-            <h1 class="text-white">LPG Import & Export</h1>
+            <h4 class="text-white">The one stop LPG procurement provider</h4>
+            <h1 class="text-white">LPG Trading</h1>
             <p class="lead text-white opacity-8">
-                High quality Bulk LPG gas ideal for industrial and commercial consumers 
-                spanning from plastic manufacturing, steel shaping, glass making, hospitals, 
-                hotels, aerosols manufacturing, 
-                just to name a few. We have the capacity to fulfil your LPG gas requirements.
+              We deal
+              with your purchasing portfolio, commissioning
+              purchases, managing administrations and logistical 
+              procedures. Our duty is to unlock new
+              sources of value in the gas industry.
             </p>
             <a
               href=""
