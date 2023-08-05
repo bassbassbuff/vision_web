@@ -25,7 +25,7 @@ import { Loader } from "@googlemaps/js-api-loader"
 
 onMounted(async () => {
 const loader = new Loader({
-  apiKey: "AIzaSyDGLW4jHdko4GLks-09NpMAEc1v-erojbo",
+  apiKey: "AIzaSyDGLW4jHd",
   version: "weekly",
   // ...additionalOptions,
 });
