@@ -1,5 +1,5 @@
 export const feature1Code = `<script setup>
-import AboutUsOption from "@/views/LandingPages/Components/AboutUsOption.vue";
+import AboutUsOption from "@/views/Pages/components/AboutUsOption.vue";
 </script>
 <template>
   <section class="py-9">

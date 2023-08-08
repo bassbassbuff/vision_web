@@ -215,7 +215,7 @@ watch(
                           <div>
                             <RouterLink
                             class="dropdown-item py-2 ps-3 border-radius-md"
-                            :to="{ name: 'presentation' }"
+                            :to="{ name: 'company' }"
                           >
                               <div class="d-flex">
                                 <div
@@ -283,7 +283,7 @@ watch(
                     <div>
                       <RouterLink
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      :to="{ name: 'presentation' }"
+                      :to="{ name: 'mission' }"
                     >
                         <div class="d-flex">
                           <div
@@ -308,7 +308,7 @@ watch(
                     <div>
                       <RouterLink
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      :to="{ name: 'presentation' }"
+                      :to="{ name: 'values' }"
                     >
                         <div class="d-flex">
                           <div

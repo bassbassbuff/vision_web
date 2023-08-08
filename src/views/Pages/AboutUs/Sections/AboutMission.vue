@@ -1,10 +1,10 @@
 <script setup>
 // example component
-import HorizontalTeamCard from "@/examples/cards/teamCards/HorizontalTeamCard.vue";
+import HorizontalMissionCard from "@/examples/cards/missionCards/HorizontalMissionCard.vue";
 
 // images
-import emma from "@/assets/img/team-5.jpg";
-import william from "@/assets/img/bruce-mars.jpg";
+import emma from "@/assets/img/mission.jpg";
+import william from "@/assets/img/mission2.jpg";
 import ivana from "@/assets/img/ivana-squares.jpg";
 import marquez from "@/assets/img/ivana-square.jpg";
 </script>
@@ -12,7 +12,7 @@ import marquez from "@/assets/img/ivana-square.jpg";
 <template>
   <section class="pb-5 position-relative bg-gradient-dark mx-n3">
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
           <h3 class="text-white z-index-1 position-relative">
             The Executive Team
@@ -22,30 +22,28 @@ import marquez from "@/assets/img/ivana-square.jpg";
             get good at. That’s my skill.
           </p>
         </div>
-      </div>
+      </div> -->
       <div class="row">
         <div class="col-lg-6 col-12">
-          <HorizontalTeamCard
+          <HorizontalMissionCard
             class="mt-4"
             :image="emma"
-            :profile="{ name: 'Emma Roberts', link: 'javascript:;' }"
-            :position="{ label: 'UI Designer', color: 'success' }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
+            :profile="{ name: 'Vision', link: 'javascript:;' }"
+            description="To be the leader in LPG importation, exportation
+            and transportation in East and Central Africa.."
           />
         </div>
         <div class="col-lg-6 col-12">
-          <HorizontalTeamCard
+          <HorizontalMissionCard
             class="mt-lg-4 mt-5"
             :image="william"
-            :profile="{ name: 'William Pearce', link: 'javascript:;' }"
-            :position="{ label: 'Boss', color: 'success' }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
+            :profile="{ name: 'Mission', link: 'javascript:;' }"
+            description="Our purpose is to fulﬁll your LPG requirements at
+            the best aﬀordable rates.."
           />
         </div>
       </div>
-      <div class="row mt-4">
+      <!-- <div class="row mt-4">
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-4 z-index-2"
@@ -66,7 +64,7 @@ import marquez from "@/assets/img/ivana-square.jpg";
                     activity deemed to be an art."
           />
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

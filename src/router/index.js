@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
-import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
-import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
-import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
-import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
-import LocationsView from "../views/LandingPages/Locations/LocationsView.vue";
+import CompanyView from "../views/Pages/AboutUs/CompanyView.vue";
+import MissionView from "../views/Pages/AboutUs/Mission.vue";
+import CoreValues from "../views/Pages/AboutUs/CoreValues.vue";
+import ContactView from "../views/Pages/ContactUs/ContactView.vue";
+import AuthorView from "../views/Pages/Author/AuthorView.vue";
+import SignInBasicView from "../views/Pages/SignIn/BasicView.vue";
+import LocationsView from "../views/Pages/Locations/LocationsView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
@@ -33,27 +35,37 @@ const router = createRouter({
       component: PresentationView,
     },
     {
-      path: "/pages/landing-pages/about-us",
-      name: "about",
-      component: AboutView,
+      path: "/pages/about-us/company",
+      name: "company",
+      component: CompanyView,      
     },
     {
-      path: "/pages/landing-pages/contact-us",
+      path: "/pages/about-us/mission",
+      name: "mission",
+      component: MissionView,      
+    },
+    {
+      path: "/pages/about-us/values",
+      name: "values",
+      component: CoreValues,      
+    },
+    {
+      path: "/pages/about-us/contact-us",
       name: "contactus",
       component: ContactView,
     },
     {
-      path: "/pages/landing-pages/author",
+      path: "/pages/about-us/author",
       name: "author",
       component: AuthorView,
     },
     {
-      path: "/pages/landing-pages/basic",
+      path: "/pages/about-us/basic",
       name: "signin-basic",
       component: SignInBasicView,
     },
     {
-      path: "/pages/landing-pages/locations",
+      path: "/pages/about-us/locations",
       name: "locations",
       component: LocationsView,
     },
@@ -156,3 +168,5 @@ const router = createRouter({
 });
 
 export default router;
+
+

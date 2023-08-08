@@ -107,6 +107,24 @@ onUnmounted(() => {
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
             <MaterialBadge class="mb-3 bg-[#3ecabf]"
+              ><h3 class="text-white mb-0">Who we are</h3></MaterialBadge
+            >            
+            <p class="lead">
+              A privately-owned entity, engaged in the 
+              business of LPG trading and has a wide market coverage through its wide
+              network of aﬃliates and agencies in East Africa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="row justify-content-center text-center my-sm-5">
+          <div class="col-lg-6">
+            <MaterialBadge class="mb-3 bg-[#3ecabf]"
               ><h2 class="text-white mb-0">Our Services</h2></MaterialBadge
             >            
             <p class="lead">

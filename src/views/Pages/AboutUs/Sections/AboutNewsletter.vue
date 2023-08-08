@@ -16,10 +16,10 @@ onMounted(() => {
       <div class="row">
         <div class="col-md-6 m-auto">
           <h4>Be the first to see the news</h4>
-          <p class="mb-4">
+          <!-- <p class="mb-4">
             Your company may not be in the software business, but eventually, a
             software company will be in your business.
-          </p>
+          </p> -->
           <div class="row">
             <div class="col-8">
               <MaterialInput
@@ -41,11 +41,11 @@ onMounted(() => {
         </div>
         <div class="col-md-5 ms-auto mt-6 md-mt-0">
           <div class="position-relative">
-            <img
+            <!-- <img
               class="max-width-50 w-100 position-relative z-index-2"
               src="@/assets/img/macbook.png"
               alt="image"
-            />
+            /> -->
           </div>
         </div>
       </div>
